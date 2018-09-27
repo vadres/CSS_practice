@@ -1,0 +1,72 @@
+body {
+  background: rgb(255,250,239);  
+}
+
+#app {
+  top: 45%;
+  left: 40%;
+  position: absolute;
+  margin: auto;
+}
+
+.balls {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background: #333;
+  border-radius: 50%;
+  top: -250px;
+  position: relative;
+  animation-name: animbounce; 
+  animation-duration: 3s; 
+  animation-iteration-count: infinite;
+}
+
+#ball-0 {
+  animation-timing-function: cubic-bezier(0.5, 0.7, 0.5, 1.6);
+  background: linear-gradient(rgb(132, 132, 132), rgb(100, 100, 185));
+}
+
+#ball-1 {
+  animation-timing-function: cubic-bezier(0.4, 0.7, 0.4, 1.59);
+  background: linear-gradient(rgb(152, 152, 152), rgb(122, 122, 195));
+}
+
+#ball-2 {
+  animation-timing-function: cubic-bezier(0.3, 0.7, 0.3, 1.58);
+  background: linear-gradient(rgb(170, 170, 170), rgb(162, 162, 205));
+}
+
+#ball-3 {
+  animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1.57);
+  background: linear-gradient(rgb(190, 190, 190), rgb(182, 180, 215));
+}
+
+#ball-4 {
+  animation-timing-function: cubic-bezier(0.1, 0.7, 0.1, 1.56);
+  background: linear-gradient(rgb(200, 200, 200), rgb(200, 200, 225));
+}
+
+@keyframes animbounce {
+  0% {
+    top: -250px;
+  }
+  25% {
+    width: 47px;
+  }
+  50% {
+    top: 250px;
+  }
+  75% {
+    width: 47px;
+  }
+  100% {
+    top: -250px;
+  }
+}
